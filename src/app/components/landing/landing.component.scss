@@ -1,5 +1,5 @@
 #mainDiv {
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
@@ -23,8 +23,9 @@ h3 {
 }
 
 #landingImgDiv {
-    margin: 5rem;
+    margin: 5rem auto;
     display: flex;
+    max-width: 800px;
 }
 
 #landingImgDiv img {
