@@ -1,0 +1,42 @@
+button {
+  min-height: 40px;
+  height: fit-content;
+  border: none;
+  border-radius: 5px;
+  padding: 0 1rem;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-text-light);
+}
+
+button:hover {
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.auto-width {
+  min-width: 170px;
+}
+
+.parent-width {
+  width: 100%;
+}
+
+.cb-primary {
+  background-color: var(--color-foreground-primary) !important;
+}
+
+.cb-secondary {
+  background-color: var(--color-foreground-secondary);
+}
+
+.cb-tertiary {
+  background-color: var(--color-foreground-tertiary);
+}
+
+.cb-danger {
+  background-color: var(--color-foreground-tertiary);
+}
+
+.cb-disabled {
+  background-color: var(--color-forground-quartiary) !important;
+}

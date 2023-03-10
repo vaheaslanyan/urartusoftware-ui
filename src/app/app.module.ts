@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { CustomButtonComponent } from './components/shared/custom-button/custom-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LandingComponent
+    LandingComponent,
+    CustomButtonComponent
   ],
   imports: [
     BrowserModule,

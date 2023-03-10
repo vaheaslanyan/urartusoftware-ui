@@ -8,9 +8,11 @@
     --color-background-primary: #D6E6FF;
     --color-foreground-primary: #4056A1;
     --color-foreground-secondary: #D79922;
-    --color-foreground-tertiary: #A8A8A9;
+    --color-foreground-tertiary: #F13C20;
+    --color-foreground-quartiary: #A8A8A9;
 
     --color-text-primary: #3d3d3d;
+    --color-text-light: white;
 }
 
 html body {
@@ -21,4 +23,17 @@ html body {
 
 h1 {
     font-size: 40px;
+}
+
+ul li::marker {
+    color: var(--color-foreground-secondary);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.center-in-flex {
+    margin-left: auto;
+    margin-right: auto;
 }

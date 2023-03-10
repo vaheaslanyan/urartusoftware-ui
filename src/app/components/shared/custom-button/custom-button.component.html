@@ -1,0 +1,14 @@
+<button
+  [disabled]="isDisabled"
+  [ngClass]="{
+    'cb-primary': style === buttonStyle.PRIMARY && !isDisabled,
+    'cb-secondary': style === buttonStyle.SECONDARY && !isDisabled,
+    'cb-tertiary': style === buttonStyle.TERTIARY && !isDisabled,
+    'cb-danger':style === buttonStyle.DANGER && !isDisabled,
+    'cb-disabled': isDisabled,
+    'auto-width': !useParentWidth,
+    'parent-width': useParentWidth
+  }"
+>
+  {{ name }}
+</button>

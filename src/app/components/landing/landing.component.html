@@ -1,9 +1,29 @@
 <div id="mainDiv" class="container">
-    <div class="heading-div">
-        <h1>Web application <span class="heading-blue">development you need.</span></h1>
-        <h3>Give us your problems, we’ll turn them into solutions.</h3>
-        <div id="landingImgDiv">
+    <div class="heading-div row">
+        <div class="col">
+            <h1>Web application <span class="heading-blue">development you want.</span></h1>
+            <h3>Give us your problems, we’ll turn them into solutions.</h3>
+            <div id="landingActionButtonDiv">
+                <app-custom-button class="center-in-flex" [name]="buttonName" [style]="buttonStyle"></app-custom-button>
+            </div>
+        </div>
+    </div>
+    <div id="landingImgDiv" class="row">
+        <div class="col">
             <img src="../../../assets/building_product.svg" alt="collaboration">
         </div>
     </div>
+    <div id="whySectionDiv" class="row">
+        <h2><span id="whySpan">Why</span> choose <span id="companyTagSpan">Urartu Software</span>?</h2>
+        <ul>
+            <li><span>User Experience:</span> Responsive and minimalistic designs that will let your users concentrate on what they want to do instead of how to do it</li>
+            <li><span>Security:</span> Buit with security in mind, every step of the way</li>
+            <li><span>Scalability:</span> Everything we build, big or small, we make sure that it can grow bigger when needed</li>
+            <li><span>Strong communication:</span> One of the most important aspects for any relationship, we stick to it</li>
+            <li><span>Competitive pricing:</span> Our services are competitively priced just to add that cherry on top</li>
+        </ul>
+    </div>
+
+
+
 </div>
