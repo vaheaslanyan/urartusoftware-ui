@@ -1,0 +1,23 @@
+.navbar {
+    background-color: white;
+    height: 60px;
+
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    color: var(--color-foreground-primary);
+}
+
+.nav-link {
+    color: var(--color-foreground-tertiary);
+}
+
+.nav-link:hover {
+    color: var(--color-text-primary);
+}
+
+.nav-link.active {
+    color: var(--color-foreground-secondary);
+    border-bottom: solid 2px;
+}

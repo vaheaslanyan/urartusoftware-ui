@@ -1,0 +1,27 @@
+#mainDiv {
+    margin-top: 5rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.heading-blue {
+    background-image: linear-gradient(100deg, var(--color-text-primary), var(--color-foreground-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#landingImgDiv {
+    margin: 5rem;
+    display: flex;
+}
+
+#landingImgDiv img {
+    width: 100%;
+    margin: 0 auto;
+}
