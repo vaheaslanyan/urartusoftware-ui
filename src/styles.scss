@@ -41,3 +41,47 @@ ul li::marker {
     margin-left: auto;
     margin-right: auto;
 }
+
+// Form
+form h5 {
+    color: var(--color-foreground-primary);
+}
+
+form div {
+    margin-bottom: 2rem;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-foreground-quartiary);
+    color: var(--color-foreground-secondary);
+    font-weight: 300;
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-foreground-primary);
+    color: var(--color-foreground-primary);
+}
+
+form .dropdown {
+    margin-top: 2rem;
+}
+
+// Removing stepper from number input
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ButtonStyleEnum } from 'src/app/models/ButtonStyleEnum';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-
+  buttonStyle = ButtonStyleEnum.PRIMARY;
 }
