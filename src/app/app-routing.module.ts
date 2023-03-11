@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './components/contact/contact.component';
 import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
   {
-    // This path must be included to redirect users to Keycloak on logout
     path: '',
     component: LandingComponent,
   },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  }
 ];
 
 @NgModule({
