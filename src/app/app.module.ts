@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { CustomButtonComponent } from './components/shared/custom-button/custom-button.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

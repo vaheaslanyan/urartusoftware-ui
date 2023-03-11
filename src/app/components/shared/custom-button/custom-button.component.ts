@@ -14,6 +14,7 @@ export class CustomButtonComponent implements OnInit {
   @Input() style?: ButtonStyleEnum; // Pass ButtonStyle.PRIMARY, .SECONDARY, or .TERTIARY
   @Input() isDisabled: boolean = false;
   @Input() useParentWidth: boolean = false; // width is set automatically if false
+  @Input() type?: String;
 
   buttonStyle = ButtonStyleEnum;
 

@@ -1,46 +1,125 @@
 <div id="contactMainDiv" class="container">
-    <div class="row">
-        <div id="contactFormDiv" class="col">
-            <form>
-                <h5>Tell us about yourself.</h5>
-                <div>
-                    <input type="text" name="name" id="nameInput" placeholder="Name" aria-describedby="emailHelp">
-                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-                </div>
-                <div>
-                    <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                    <input type="email" name="email" id="emailInput" placeholder="Email">
-                </div>
-                <div>
-                    <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                    <input type="phone" name="phone" id="phoneInput" placeholder="Phone">
-                </div>
-                <div>
-                    <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                    <input type="url" name="website" id="websiteInput" placeholder="Website">
-                </div>
-                <h5>Tell us about your project.</h5>
-                <div>
-                    <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                    <textarea type="url" name="projectDescription" id="projectDescriptionInput" placeholder="What do you need to be solved?"></textarea>
-                </div>
-                <div>
-                    <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                    <input type="number" name="budget" id="budgetInput" placeholder="Estimated budget">
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                      Where did you hear about us
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                      <li><a class="dropdown-item active" href="#">Search Engine (Google, etc.)</a></li>
-                      <li><a class="dropdown-item" href="#">Social Media (LinkedIn, Twitter, etc.)</a></li>
-                      <li><a class="dropdown-item" href="#">Referral</a></li>
-                      <li><a class="dropdown-item" href="#">Other</a></li>
-                    </ul>
-                  </div>
-                <app-custom-button [name]="'Submit'" [style]="buttonStyle"></app-custom-button>
-            </form>
-        </div>
+  <div class="row">
+    <div id="contactTitleDiv" class="col">
+      <h1>Let's talk.</h1>
     </div>
+  </div>
+  <div class="row">
+    <div id="contactFormDiv" class="col">
+      <form (submit)="submit()">
+        <h5>Tell us about yourself.</h5>
+        <div>
+          <input
+            required
+            ngModel
+            name="name"
+            #name="ngModel"
+            type="text"
+            id="nameInput"
+            placeholder="Name*"
+          />
+          <div class="input-error-div">
+            <div *ngIf="name.touched && !name.valid">name is required</div>
+          </div>
+        </div>
+        <div>
+          <input
+            required
+            ngModel
+            name="email"
+            email="true"
+            #email="ngModel"
+            type="email"
+            id="emailInput"
+            placeholder="Email*"
+          />
+          <div class="input-error-div">
+            <div *ngIf="email.touched && !email.valid">enter valid email</div>
+          </div>
+        </div>
+        <div>
+          <input
+            ngModel
+            name="phone"
+            #phone="ngModel"
+            type="phone"
+            id="phoneInput"
+            placeholder="Phone"
+            [pattern]="phonePattern"
+          />
+          <div class="input-error-div">
+            <div *ngIf="phone.value && !phone.valid">enter valid number</div>
+          </div>
+        </div>
+        <div>
+          <input
+            ngModel
+            name="websitUrl"
+            #websiteUrl="ngModel"
+            type="url"
+            id="websiteInput"
+            placeholder="Website"
+            [pattern]="websiteUrlPattern"
+          />
+          <div class="input-error-div">
+            <div *ngIf="websiteUrl.value && !websiteUrl.valid">enter valid URL</div>
+          </div>
+        </div>
+        <h5>Tell us about your project.</h5>
+        <div>
+          <textarea
+            ngModel
+            name="projectDescription"
+            type="url"
+            id="projectDescriptionInput"
+            placeholder="What do you need to be solved?"
+          ></textarea>
+          <div class="input-error-div"></div>
+        </div>
+        <div>
+          <input
+            ngModel
+            name="budget"
+            type="number"
+            id="budgetInput"
+            placeholder="Estimated budget"
+          />
+          <div class="input-error-div"></div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle btn-sm"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Where did you hear about us
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="dropdownMenuButton2"
+          >
+            <li>
+              <a class="dropdown-item active" href="#"
+                >Search Engine (Google, etc.)</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                >Social Media (LinkedIn, Twitter, etc.)</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="#">Referral</a></li>
+            <li><a class="dropdown-item" href="#">Other</a></li>
+          </ul>
+        </div>
+        <app-custom-button
+          [name]="'Submit'"
+          [style]="buttonStyle"
+          [type]="'submit'"
+        ></app-custom-button>
+      </form>
+    </div>
+  </div>
 </div>

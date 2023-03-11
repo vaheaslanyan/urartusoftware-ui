@@ -48,7 +48,7 @@ form h5 {
 }
 
 form div {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 input, textarea {
@@ -77,6 +77,16 @@ input:focus, textarea:focus {
 
 form .dropdown {
     margin-top: 2rem;
+}
+
+.input-error-div {
+    height: 20px;
+    color: var(--color-foreground-tertiary);
+}
+
+// Field with failed validation
+form .ng-touched.ng-invalid {
+    border-color: var(--color-foreground-tertiary);
 }
 
 // Removing stepper from number input
