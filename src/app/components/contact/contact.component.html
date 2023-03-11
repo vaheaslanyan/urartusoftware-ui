@@ -17,9 +17,10 @@
             type="text"
             id="nameInput"
             placeholder="Name*"
+            [pattern]="namePattern"
           />
           <div class="input-error-div">
-            <div *ngIf="name.touched && !name.valid">name is required</div>
+            <div *ngIf="name.touched && !name.valid">enter valid name</div>
           </div>
         </div>
         <div>

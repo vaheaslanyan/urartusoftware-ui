@@ -82,11 +82,13 @@ form .dropdown {
 .input-error-div {
     height: 20px;
     color: var(--color-foreground-tertiary);
+    font-weight: 300;
 }
 
 // Field with failed validation
 form .ng-touched.ng-invalid {
     border-color: var(--color-foreground-tertiary);
+    color: var(--color-foreground-tertiary);
 }
 
 // Removing stepper from number input
