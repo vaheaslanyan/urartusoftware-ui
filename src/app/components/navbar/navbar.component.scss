@@ -1,5 +1,5 @@
 .navbar {
-    background-color: white;
+    background-color: var(--color-background-light);
     height: 60px;
     margin-bottom: 1rem;
     position: fixed;
@@ -25,5 +25,9 @@
     border-bottom: solid 2px;
 }
 
-#navbarContactBtn {
+#navbarInnerDiv {
+    background-color: var(--color-background-light);
+    @media(max-width: 768px) {
+        padding-bottom: 1rem;
+    }
 }
