@@ -9,6 +9,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { CustomButtonComponent } from './components/shared/custom-button/custom-button.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { ContactFormComponent } from './components/contact/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     LandingComponent,
     CustomButtonComponent,
-    ContactComponent
+    ContactComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

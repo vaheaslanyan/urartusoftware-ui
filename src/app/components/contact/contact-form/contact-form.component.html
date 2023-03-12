@@ -1,0 +1,95 @@
+<form (submit)="submit()">
+  <h5>Tell us about yourself.</h5>
+  <div>
+    <input
+      required
+      ngModel
+      name="name"
+      #name="ngModel"
+      type="text"
+      id="nameInput"
+      placeholder="Name*"
+      [pattern]="namePattern"
+    />
+    <div class="input-error-div">
+      <div *ngIf="name.touched && !name.valid">enter valid name</div>
+    </div>
+  </div>
+  <div>
+    <input
+      required
+      ngModel
+      name="email"
+      email="true"
+      #email="ngModel"
+      type="email"
+      id="emailInput"
+      placeholder="Email*"
+    />
+    <div class="input-error-div">
+      <div *ngIf="email.touched && !email.valid">enter valid email</div>
+    </div>
+  </div>
+  <div>
+    <input
+      ngModel
+      name="phone"
+      #phone="ngModel"
+      type="phone"
+      id="phoneInput"
+      placeholder="Phone"
+      [pattern]="phonePattern"
+    />
+    <div class="input-error-div">
+      <div *ngIf="phone.value && !phone.valid">enter valid number</div>
+    </div>
+  </div>
+  <div>
+    <input
+      ngModel
+      name="websitUrl"
+      #websiteUrl="ngModel"
+      type="url"
+      id="websiteInput"
+      placeholder="Website"
+      [pattern]="websiteUrlPattern"
+    />
+    <div class="input-error-div">
+      <div *ngIf="websiteUrl.value && !websiteUrl.valid">enter valid URL</div>
+    </div>
+  </div>
+  <h5>Tell us about your project.</h5>
+  <div>
+    <textarea
+      ngModel
+      name="projectDescription"
+      type="url"
+      id="projectDescriptionInput"
+      placeholder="What do you need to be solved?"
+    ></textarea>
+    <div class="input-error-div"></div>
+  </div>
+  <div>
+    <input
+      ngModel
+      name="budget"
+      type="number"
+      id="budgetInput"
+      placeholder="Estimated budget"
+    />
+    <div class="input-error-div"></div>
+  </div>
+  <div>
+    <select id="businessSourceSelector">
+      <option disabled selected>Where did you hear about us?</option>
+      <option *ngFor="let source of businessSources" [value]="source">
+        {{ source }}
+      </option>
+    </select>
+  </div>
+  <app-custom-button
+    [name]="'Submit'"
+    [style]="buttonStyle"
+    [type]="'submit'"
+  ></app-custom-button>
+</form>
