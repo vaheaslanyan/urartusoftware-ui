@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ButtonStyleEnum } from 'src/app/models/ButtonStyleEnum';
 
 @Component({
@@ -6,7 +6,7 @@ import { ButtonStyleEnum } from 'src/app/models/ButtonStyleEnum';
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss']
 })
-export class ContactFormComponent {
+export class ContactFormComponent implements OnInit {
   buttonStyle = ButtonStyleEnum.SECONDARY;
 
   namePattern = "[a-zA-Z\\s]+";
@@ -14,14 +14,11 @@ export class ContactFormComponent {
   websiteUrlPattern = "(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?";
   businessSources = ['Seach Engine (Google, etc.)', 'Social Media (LinkedIn, Twitter, etc.)', 'Referral', 'Other'];
 
-  submitted = false;
-
-
   constructor() {}
 
   ngOnInit(): void {}
 
-  submit() {
-    console.log('this');
+  submitForm(formValue: any): void {
+    console.log(formValue);
   }
 }

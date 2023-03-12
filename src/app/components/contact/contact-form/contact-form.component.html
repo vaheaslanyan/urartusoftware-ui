@@ -1,4 +1,4 @@
-<form (submit)="submit()">
+<form #contactForm="ngForm" (ngSubmit)="submitForm(contactForm.value)">
   <h5>Tell us about yourself.</h5>
   <div>
     <input
@@ -87,9 +87,13 @@
       </option>
     </select>
   </div>
+  <div class="input-error-div">
+    <div *ngIf="contactForm.invalid!">Please complete the required fields*</div>
+  </div>
   <app-custom-button
     [name]="'Submit'"
     [style]="buttonStyle"
     [type]="'submit'"
+    [isDisabled]="contactForm.invalid!"
   ></app-custom-button>
 </form>

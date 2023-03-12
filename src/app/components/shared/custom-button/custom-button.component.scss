@@ -38,5 +38,9 @@ button:hover {
 }
 
 .cb-disabled {
-  background-color: var(--color-forground-quartiary) !important;
+  background-color: var(--color-foreground-quartiary) !important;
+}
+
+.cb-disabled:hover {
+  box-shadow: none;
 }
