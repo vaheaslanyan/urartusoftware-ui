@@ -1,4 +1,4 @@
-<form #contactForm="ngForm" (ngSubmit)="submitForm(contactForm.value)">
+<form #contactForm="ngForm" (ngSubmit)="submitForm(contactForm)">
   <h5>Tell us about yourself.</h5>
   <div>
     <input
@@ -80,20 +80,29 @@
     <div class="input-error-div"></div>
   </div>
   <div>
-    <select id="businessSourceSelector">
-      <option disabled selected>Where did you hear about us?</option>
+    <select ngModel="NA" name="businessSource" id="businessSourceSelector">
+      <option disabled value="NA">Where did you hear about us?</option>
       <option *ngFor="let source of businessSources" [value]="source">
         {{ source }}
       </option>
     </select>
   </div>
   <div class="input-error-div">
-    <div *ngIf="contactForm.invalid!">Please complete the required fields*</div>
+    <div
+      [ngClass]="{
+        'form-info-message': contactForm.pristine && !contactForm.submitted
+      }"
+      *ngIf="contactForm.pristine"
+    >
+      Please complete the required fields*
+    </div>
+    <div *ngIf="!contactForm.pristine && contactForm.invalid">
+      Please correct information*
+    </div>
   </div>
   <app-custom-button
     [name]="'Submit'"
     [style]="buttonStyle"
     [type]="'submit'"
-    [isDisabled]="contactForm.invalid!"
   ></app-custom-button>
 </form>

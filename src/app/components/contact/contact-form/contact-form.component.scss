@@ -13,6 +13,6 @@
     -moz-appearance: none;
 }
 
-#businessSourceSelector i {
-    color: white;
+.form-info-message {
+    color: var(--color-text-primary)!important;
 }

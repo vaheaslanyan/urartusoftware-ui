@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ButtonStyleEnum } from 'src/app/models/ButtonStyleEnum';
 
 @Component({
@@ -18,7 +19,11 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  submitForm(formValue: any): void {
-    console.log(formValue);
+  submitForm(form: NgForm): void {
+    form.form.markAllAsTouched();
+    if (form.valid) {
+      console.log(form.value);
+    }
+    
   }
 }
