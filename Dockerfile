@@ -9,6 +9,9 @@ RUN npm run build --prod
 
 # stage 2 (running)
 FROM nginx:alpine
+COPY ./nginx.conf /etc/nginx/nginx.conf
+## replace default nginx index page
+RUN rm -rf /usr/share/nginx/html/*
 COPY --from=build /app-ui/dist/urartusoftware-ui /usr/share/nginx/html
 EXPOSE 80
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
