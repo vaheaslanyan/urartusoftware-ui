@@ -1,3 +1,13 @@
-<div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<div class="alert" [ngClass]="{
+    'alert-primary': level === alertLevel.PRIMARY,
+    'alert-secondary': level === alertLevel.SECONDARY,
+    'alert-success': level === alertLevel.SUCCESS,
+    'alert-danger': level === alertLevel.DANGER,
+    'alert-warning': level === alertLevel.WARNING,
+    'alert-info': level === alertLevel.INFO,
+    'alert-light': level === alertLevel.LIGHT,
+    'alert-dark': level === alertLevel.DANGER,
+    'alert-inactive': !isActive
+}" role="alert">
+    {{message}}
 </div>

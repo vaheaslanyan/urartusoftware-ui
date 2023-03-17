@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AlertLevelEnum } from 'src/app/models/AlertLevelEnum';
 import { ButtonStyleEnum } from 'src/app/models/ButtonStyleEnum';
-import { ContactRequest } from 'src/app/models/ContactRequest';
+import { AlertService } from 'src/app/services/alert.service';
 import { ContactRequestService } from 'src/app/services/contact-request.service';
 
 @Component({
@@ -11,6 +12,7 @@ import { ContactRequestService } from 'src/app/services/contact-request.service'
 })
 export class ContactFormComponent implements OnInit {
   buttonStyle = ButtonStyleEnum.SECONDARY;
+  alertLevel = AlertLevelEnum.SECONDARY;
 
   namePattern = '[a-zA-Z\\s]+';
   phonePattern = '[- +()0-9]+';
@@ -22,11 +24,12 @@ export class ContactFormComponent implements OnInit {
     'Other',
   ];
 
-  constructor(private crService: ContactRequestService) {}
+  constructor(private crService: ContactRequestService, private alertService: AlertService) {}
 
   ngOnInit(): void {}
 
   submitForm(form: NgForm): void {
+    this.alertService.setAlert("WORKED", this.alertLevel);
     form.form.markAllAsTouched();
     if (form.valid) {
       console.log(JSON.stringify(form.value))
