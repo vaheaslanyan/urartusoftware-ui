@@ -11,5 +11,6 @@ RUN npm run build --prod
 FROM nginx:alpine
 COPY --from=build /app-ui/dist/urartusoftware-ui /usr/share/nginx/html
 EXPOSE 80
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
 # to serve on 4200 forward port when runnind image
 # docker run -d -p 4200:80 urartusoftware/us-ui
