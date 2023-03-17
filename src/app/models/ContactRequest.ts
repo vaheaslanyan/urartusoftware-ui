@@ -3,7 +3,7 @@ export class ContactRequest {
     email: string;
     phone: string;
     websiteUrl: string;
-    budget: number;
+    budget: string;
     projectDescription: string;
     businessSource: string;
 
@@ -12,7 +12,7 @@ export class ContactRequest {
         email: string,
         phone: string,
         websiteUrl: string,
-        budget: number,
+        budget: string,
         projectDescription: string,
         businessSource: string
     ){

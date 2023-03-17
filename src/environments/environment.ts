@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-    contactRequestsURL: 'http://localhost:8080'
+    contactRequestsURL: 'http://localhost:8080/contact-requests'
 };
 
 /*

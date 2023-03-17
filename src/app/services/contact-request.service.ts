@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import { ContactRequest } from 'src/app/models/ContactRequest';
 import { Observable } from 'rxjs';
 
@@ -14,7 +14,7 @@ export class ContactRequestService {
 
   constructor(private httpClient: HttpClient) { }
 
-  postRequest(request: ContactRequest) : Observable<ContactRequest> {
+  postRequest(request: any) : Observable<ContactRequest> {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
