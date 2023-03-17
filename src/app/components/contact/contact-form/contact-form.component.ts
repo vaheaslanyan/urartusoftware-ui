@@ -12,7 +12,6 @@ import { ContactRequestService } from 'src/app/services/contact-request.service'
 })
 export class ContactFormComponent implements OnInit {
   buttonStyle = ButtonStyleEnum.SECONDARY;
-  alertLevel = AlertLevelEnum.SECONDARY;
 
   namePattern = '[a-zA-Z\\s]+';
   phonePattern = '[- +()0-9]+';
@@ -29,22 +28,24 @@ export class ContactFormComponent implements OnInit {
   ngOnInit(): void {}
 
   submitForm(form: NgForm): void {
-    this.alertService.setAlert("WORKED", this.alertLevel);
     form.form.markAllAsTouched();
     if (form.valid) {
       console.log(JSON.stringify(form.value))
       this.saveRequest(form);
+    } else {
+      this.alertService.setAlert("Please check your infomation", AlertLevelEnum.WARNING);
     }
   }
 
   saveRequest(form: NgForm) {
 
     this.crService.postRequest(JSON.stringify(form.value)).subscribe({
-      next(res) {
-        console.log('saved', res);
+      next: (res) => {
+        this.alertService.setAlert("Request submitted.", AlertLevelEnum.SUCCESS);
       },
-      error(err) {
+      error: (err) => {
         console.log('failed', err);
+        this.alertService.setAlert("Request failed", AlertLevelEnum.DANGER);
       },
     });
   }
