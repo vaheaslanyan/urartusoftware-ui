@@ -1,0 +1,7 @@
+.alert {
+    position: fixed;
+    z-index: 5;
+    top: calc(var(--navbar-height) + 10px);
+    left: 1rem;
+    right: 1rem;
+}
