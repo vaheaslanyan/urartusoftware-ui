@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactFormComponent } from './components/contact/contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AlertComponent } from './components/shared/alert/alert.component';
+import { ConfirmationPageComponent } from './components/confirmation-page/confirmation-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AlertComponent } from './components/shared/alert/alert.component';
     CustomButtonComponent,
     ContactComponent,
     ContactFormComponent,
-    AlertComponent
+    AlertComponent,
+    ConfirmationPageComponent
   ],
   imports: [
     BrowserModule,

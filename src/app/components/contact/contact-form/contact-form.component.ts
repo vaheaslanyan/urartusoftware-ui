@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AlertLevelEnum } from 'src/app/models/AlertLevelEnum';
 import { ButtonStyleEnum } from 'src/app/models/ButtonStyleEnum';
 import { AlertService } from 'src/app/services/alert.service';
@@ -23,7 +24,7 @@ export class ContactFormComponent implements OnInit {
     'Other',
   ];
 
-  constructor(private crService: ContactRequestService, private alertService: AlertService) {}
+  constructor(private crService: ContactRequestService, private alertService: AlertService, private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -41,6 +42,7 @@ export class ContactFormComponent implements OnInit {
 
     this.crService.postRequest(JSON.stringify(form.value)).subscribe({
       next: (res) => {
+        this.router.navigate(['confirmation']);
         this.alertService.setAlert("Request submitted.", AlertLevelEnum.SUCCESS);
       },
       error: (err) => {
