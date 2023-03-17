@@ -6,7 +6,7 @@ import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: LandingComponent,
   },
   {
@@ -16,7 +16,12 @@ const routes: Routes = [
   {
     path: 'confirmation',
     component: ConfirmationPageComponent
-  }
+  },
+  /* MAKE SURE THIS IS ALWAYS LAST*/
+  {
+    path: '**',
+    redirectTo : 'home',
+  },
 ];
 
 @NgModule({
