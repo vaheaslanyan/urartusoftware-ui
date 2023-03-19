@@ -11,8 +11,10 @@
 .navbar-brand {
     cursor: pointer;
     height: 50px;
-    margin: 0 2rem;
     color: var(--color-foreground-primary);
+    @media(min-width: 768px) {
+        margin: 0 2rem;
+    }
 }
 
 .nav-link {
