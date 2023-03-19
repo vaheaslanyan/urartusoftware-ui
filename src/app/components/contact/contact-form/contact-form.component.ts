@@ -24,6 +24,8 @@ export class ContactFormComponent implements OnInit {
     'Other',
   ];
 
+  isLoading = false;
+
   constructor(private crService: ContactRequestService, private alertService: AlertService, private router: Router) {}
 
   ngOnInit(): void {}
@@ -31,7 +33,6 @@ export class ContactFormComponent implements OnInit {
   submitForm(form: NgForm): void {
     form.form.markAllAsTouched();
     if (form.valid) {
-      console.log(JSON.stringify(form.value))
       this.saveRequest(form);
     } else {
       this.alertService.setAlert("Please check your infomation", AlertLevelEnum.WARNING);
@@ -39,6 +40,8 @@ export class ContactFormComponent implements OnInit {
   }
 
   saveRequest(form: NgForm) {
+
+    this.isLoading = true;
 
     this.crService.postRequest(JSON.stringify(form.value)).subscribe({
       next: (res) => {
@@ -48,7 +51,9 @@ export class ContactFormComponent implements OnInit {
       error: (err) => {
         console.log('failed', err);
         this.alertService.setAlert("Request failed", AlertLevelEnum.DANGER);
-      },
+      }
+    }).add(() => {
+      this.isLoading = false;
     });
   }
 }
