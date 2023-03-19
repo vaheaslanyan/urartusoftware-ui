@@ -1,7 +1,5 @@
 input {
-    // Removing client native appearance for more consistent ui
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    border-radius: 0;
 }
 
 #businessSourceSelector {
@@ -15,6 +13,7 @@ input {
 
     font-weight: 200;
 
+    // Removing client native appearance for more consistent ui
     -webkit-appearance: none;
     -moz-appearance: none;
 }
