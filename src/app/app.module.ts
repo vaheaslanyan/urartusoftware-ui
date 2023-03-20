@@ -13,6 +13,7 @@ import { ContactFormComponent } from './components/contact/contact-form/contact-
 import { HttpClientModule } from '@angular/common/http';
 import { AlertComponent } from './components/shared/alert/alert.component';
 import { ConfirmationPageComponent } from './components/confirmation-page/confirmation-page.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ConfirmationPageComponent } from './components/confirmation-page/confir
     ContactComponent,
     ContactFormComponent,
     AlertComponent,
-    ConfirmationPageComponent
+    ConfirmationPageComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
