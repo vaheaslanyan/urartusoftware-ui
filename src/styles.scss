@@ -13,6 +13,7 @@
 
     --color-background-primary: #D6E6FF;
     --color-background-light: white;
+    --color-background-dark: #222;
     --color-foreground-primary: #4056A1;
     --color-foreground-secondary: #D79922;
     --color-foreground-tertiary: #F13C20;
@@ -26,6 +27,15 @@ html body {
     background-color: var(--color-background-primary);
     color: var(--color-text-primary);
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-foreground-secondary);
+}
+
+a:hover {
+    color: var(--color-foreground-primary);
 }
 
 h1 {
@@ -105,3 +115,58 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+// Glowing border
+.gradient-border {
+    --border-width: 3px;
+  
+    position: relative;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    // text-transform: uppercase;
+    color: var(--color-text-light);
+    background: var(--color-background-dark);
+    border-radius: var(--border-width);
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        var(--color-foreground-primary),
+        var(--color-foreground-secondary),
+        var(--color-foreground-tertiary),
+      );
+    //   background: linear-gradient(
+    //     60deg,
+    //     hsl(224, 85%, 66%),
+    //     hsl(269, 85%, 66%),
+    //     hsl(314, 85%, 66%),
+    //     hsl(359, 85%, 66%),
+    //     hsl(44, 85%, 66%),
+    //     hsl(89, 85%, 66%),
+    //     hsl(134, 85%, 66%),
+    //     hsl(179, 85%, 66%)
+    //   );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: calc(2 * var(--border-width));
+      animation: moveGradient 4s alternate infinite;
+    }
+  }
+
+  .gradient-border-content {
+    padding: 1rem;
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
