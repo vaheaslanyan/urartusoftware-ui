@@ -18,8 +18,8 @@
 
 .tbutton {
     margin: auto 0 auto 5px;
-    height: 15px;
-    width: 15px;
+    height: 14px;
+    width: 14px;
     border-radius: 100%;
 }
 
@@ -34,4 +34,23 @@
 
 .tbutton-green {
     background-color: #62C454;
+}
+
+.terminal-content {
+    padding: 6px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 14px;
+}
+
+.ttext-top {
+    color: white;
+}
+
+.ttext-user {
+    color: #939393;
+}
+
+.ttext-path {
+    margin-left: 8px;
+    color: #E7B649;
 }
