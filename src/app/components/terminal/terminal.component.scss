@@ -42,8 +42,28 @@
     font-size: 14px;
 }
 
-.ttext-top {
+.terminal-cursor {
+    display: inline-block;
+    height: 15px;
+    width: 7px;
+    margin-bottom: -4px;
+    margin-left: -8px;
+
+    background-color: #9D9C9D;
+    animation: blinker 1s step-start infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.ttext {
+    margin-right: 8px;
     color: white;
+}
+
+.ttext-top {
 }
 
 .ttext-user {
@@ -51,6 +71,9 @@
 }
 
 .ttext-path {
-    margin-left: 8px;
     color: #E7B649;
+}
+
+.ttext-type-div {
+    margin-left: 10px;
 }
