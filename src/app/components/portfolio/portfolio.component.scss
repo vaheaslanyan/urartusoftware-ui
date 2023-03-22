@@ -17,11 +17,6 @@
     font-weight: 300;
 }
 
-.row {
-    // margin-left: 1rem;
-    // margin-right: 1rem;
-}
-
 /* Portfolio face portion */
 #portfolioFaceDiv {
     text-align: center;
@@ -69,8 +64,17 @@
 }
 
 .tech-stack-block-header {
-    display: flex;
-    border-right: 1px solid var(--color-text-primary);
+    display: flex;   
+}
+
+.column-right {
+    @media (max-width: 576px) {
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 576px) {
+        border-right: 1px solid var(--color-foreground-quartiary);
+    }
 }
 
 .tech-stack-block h5 {
@@ -85,8 +89,8 @@
 }
 
 .knowledge-item {
-    width: 40px;
-    margin-right: 1rem;
+    width: 60px;
+    margin-right: 0.5rem;
     padding: 0;
     display: inline-block;
 }
@@ -94,10 +98,9 @@
 .knowledge-item-logo-div {
     display: flex;
     overflow: auto;
-    width: 100%;
-    height: 40px;
-    // background-color: var(--color-text-primary);
+    width: 40px;
     border-radius: 5px;
+    margin: 0 auto 5px auto;
 
     // box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 }
@@ -108,6 +111,9 @@
 }
 
 .knowledge-item-title {
+    word-wrap: break-word;
+    line-height: 1em;
+    max-height: 2em;
     text-align: center;
     font-size: 10px;
     font-weight: 200;
