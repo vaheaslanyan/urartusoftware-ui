@@ -1,0 +1,37 @@
+.terminal-div {
+    width: 100%;
+    height: 100%;
+}
+
+.terminal-top-div {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #2D2D2D;
+    border-radius: 10px 10px 0 0;
+}
+
+.terminal-body-div {
+    background-color: #1F1E1E;
+    height: 100%;
+}
+
+.tbutton {
+    margin: auto 0 auto 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+
+.tbutton-red {
+    margin-left: 10px;
+    background-color: #E8675C;
+}
+
+.tbutton-yellow {
+    background-color: #F4BD4F;
+}
+
+.tbutton-green {
+    background-color: #62C454;
+}

@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AlertComponent } from './components/shared/alert/alert.component';
 import { ConfirmationPageComponent } from './components/confirmation-page/confirmation-page.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { TextCloudComponent } from './components/text-cloud/text-cloud.component';
+import { TerminalComponent } from './components/terminal/terminal.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     ContactFormComponent,
     AlertComponent,
     ConfirmationPageComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TextCloudComponent,
+    TerminalComponent
   ],
   imports: [
     BrowserModule,
