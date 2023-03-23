@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AlertComponent } from './components/shared/alert/alert.component';
 import { ConfirmationPageComponent } from './components/confirmation-page/confirmation-page.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     ContactFormComponent,
     AlertComponent,
     ConfirmationPageComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
