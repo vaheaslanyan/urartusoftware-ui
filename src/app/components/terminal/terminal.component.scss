@@ -3,6 +3,14 @@
   height: 100%;
 }
 
+#backButtonButton {
+  border: none;
+  background-color: transparent;
+}
+
+#backButtonButton:disabled {
+}
+
 .terminal-top-div {
   display: flex;
   width: 100%;
@@ -82,14 +90,14 @@
 
 .ttext-type p {
   margin-bottom: 0;
-    --char-count: 0;
-    display: inline-flex;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: type 1.5s steps(var(--char-count), end);
-    animation: type 1.5s steps(var(--char-count), end);
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+  --char-count: 0;
+  display: inline-flex;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 1.5s steps(var(--char-count), end);
+  animation: type 1.5s steps(var(--char-count), end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 // Type animation

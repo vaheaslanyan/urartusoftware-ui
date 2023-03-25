@@ -1,4 +1,8 @@
 <div class="terminal-div">
+    <button id="backButtonButton" (click)="navBack()" [disabled]="isInNavMenu">
+        <i class="bi bi-backspace-fill"></i>
+        Go back
+    </button>
   <div class="terminal-top-div">
     <div class="tbutton tbutton-red"></div>
     <div class="tbutton tbutton-yellow"></div>
@@ -29,8 +33,12 @@
         >
         <div class="terminal-cursor"></div>
       </div>
-      <div class="ttext-ls-div">
-        <span class="ttext ttext-button" (click)="lsOptionClicked('about')"
+      <div class="ttext-ls-div" 
+        [ngClass]="{
+            'is-hidden': !isInNavMenu
+        }"
+      >
+        <span class="ttext ttext-button" (click)="lsOptionClicked('bio')"
           >bio</span
         >
         <span class="ttext ttext-button" (click)="lsOptionClicked('tech-stack')"
