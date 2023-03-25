@@ -1,34 +1,48 @@
 <div class="terminal-div">
-    <div class="terminal-top-div">
-        <div class="tbutton tbutton-red"></div>
-        <div class="tbutton tbutton-yellow"></div>
-        <div class="tbutton tbutton-green"></div>
+  <div class="terminal-top-div">
+    <div class="tbutton tbutton-red"></div>
+    <div class="tbutton tbutton-yellow"></div>
+    <div class="tbutton tbutton-green"></div>
+  </div>
+  <div class="terminal-body-div">
+    <div class="terminal-content">
+      <div class="ttext ttext-top">Last login</div>
+      <span class="ttext ttext-user">urartusoftware</span>
+      <span class="ttext ttext-path">~/{{ path }}</span>
+      <div class="ttext-type-div">
+        <span class="ttext">$</span>
+        <span
+          id="ttextTypeSpan"
+          class="ttext"
+          [ngClass]="{
+            'ttext-type': !isResettingAnimation
+          }"
+        >
+          <p
+            [style.--char-count]="charCount"
+            [ngStyle]="{
+              width: charCount + 'ch'
+            }"
+          >
+            {{ typedText }}
+          </p></span
+        >
+        <div class="terminal-cursor"></div>
+      </div>
+      <div class="ttext-ls-div">
+        <span class="ttext ttext-button" (click)="lsOptionClicked('about')"
+          >bio</span
+        >
+        <span class="ttext ttext-button" (click)="lsOptionClicked('tech-stack')"
+          >tech-stack</span
+        >
+        <span class="ttext ttext-button" (click)="lsOptionClicked('portfolio')"
+          >portfolio</span
+        >
+        <span class="ttext ttext-button" (click)="lsOptionClicked('sure')"
+          >sure</span
+        >
+      </div>
     </div>
-    <div class="terminal-body-div">
-        <div class="terminal-content">
-            <div class="ttext ttext-top">Last login</div>
-            <span class="ttext ttext-user">urartusoftware</span>
-            <span class="ttext ttext-path">~/documents</span>
-            <div class="ttext-type-div">
-                <span class="ttext">$</span>
-                <span id="ttextTypeSpan" class="ttext" [ngClass]="{
-                    'ttext-type': !isResettingAnimation
-                }">
-                <p
-                    [style.--char-count]="charCount"
-                    [ngStyle]="{
-                        'width': charCount + 'ch'
-                    }"
-
-                >{{typedText}}</p></span>
-                <div class="terminal-cursor"></div>
-            </div>
-            <div class="ttext-ls-div">
-                <span class="ttext ttext-button" (click)="lsOptionClicked('about')">about</span>
-                <span class="ttext ttext-button" (click)="lsOptionClicked('tech-stack')">tech-stack</span>
-                <span class="ttext ttext-button" (click)="lsOptionClicked('portfolio')">portfolio</span>
-                <span class="ttext ttext-button" (click)="lsOptionClicked('sure')">sure</span>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>

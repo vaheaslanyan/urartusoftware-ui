@@ -7,14 +7,14 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 })
 export class TerminalComponent implements OnInit{
 
-  typedText = 'portfolio';
-  charCount = 9;
+  path = "about"
+  typedText = ' ';
+  charCount = 0;
   isResettingAnimation = false;
 
   constructor(private renderer: Renderer2, private el: ElementRef){}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   lsOptionClicked(option: string) {
     this.isResettingAnimation = true;
@@ -24,8 +24,11 @@ export class TerminalComponent implements OnInit{
 
     setTimeout(() => {
       this.charCount = option.length;
-    this.typedText = option;
-    this.isResettingAnimation = false;
+      this.typedText = option;
+      this.isResettingAnimation = false;
+      setTimeout(() => {
+        this.path = option
+      }, 2000)
     }, 1);
 
   }
