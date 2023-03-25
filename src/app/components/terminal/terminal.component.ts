@@ -6,8 +6,8 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./terminal.component.scss'],
 })
 export class TerminalComponent implements OnInit {
-  path = 'about';
-  typedText = ' ';
+  path = '';
+  typedText = '';
   charCount = 0;
   isResettingAnimation = false;
   isInNavMenu = true;
@@ -24,7 +24,7 @@ export class TerminalComponent implements OnInit {
       this.charCount = this.typedText.length;
       this.isResettingAnimation = false;
       setTimeout(() => {
-        this.path = 'about';
+        this.path = '';
         this.isInNavMenu = true;
         this.typedText = '';
         this.charCount = 0;
@@ -59,7 +59,7 @@ export class TerminalComponent implements OnInit {
       this.typedText = option;
       this.isResettingAnimation = false;
       setTimeout(() => {
-        this.path = option;
+        this.path = '/' + option;
         this.isInNavMenu = false;
         this.isLs = false;
         this.typedText = '';
