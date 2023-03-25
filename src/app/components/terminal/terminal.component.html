@@ -1,7 +1,7 @@
 <div class="terminal-div">
     <button id="backButtonButton" (click)="navBack()" [disabled]="isInNavMenu">
-        <i class="bi bi-backspace-fill"></i>
-        Go back
+        <i class="bi bi-arrow-bar-left"></i>
+        go back
     </button>
   <div class="terminal-top-div">
     <div class="tbutton tbutton-red"></div>
@@ -10,7 +10,7 @@
   </div>
   <div class="terminal-body-div">
     <div class="terminal-content">
-      <div class="ttext ttext-top">Last login</div>
+      <!-- <div class="ttext ttext-top">Last login</div> -->
       <span class="ttext ttext-user">urartusoftware</span>
       <span class="ttext ttext-path">~/about{{ path }}</span>
       <div class="ttext-type-div">
@@ -38,17 +38,14 @@
             'is-hidden': !isLs
         }"
       >
-        <span class="ttext ttext-button" (click)="lsOptionClicked('bio')"
+        <span class="ttext ttext-button" (click)="lsOptionClicked(1)"
           ><i class="bi bi-folder-fill"></i> bio</span
         >
-        <span class="ttext ttext-button" (click)="lsOptionClicked('tech-stack')"
+        <span class="ttext ttext-button" (click)="lsOptionClicked(2)"
           ><i class="bi bi-folder-fill"></i> tech-stack</span
         >
-        <span class="ttext ttext-button" (click)="lsOptionClicked('portfolio')"
+        <span class="ttext ttext-button" (click)="lsOptionClicked(3)"
           ><i class="bi bi-folder-fill"></i> portfolio</span
-        >
-        <span class="ttext ttext-button" (click)="lsOptionClicked('sure')"
-          ><i class="bi bi-folder-fill"></i> sure</span
         >
       </div>
     </div>

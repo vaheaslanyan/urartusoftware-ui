@@ -1,0 +1,57 @@
+/* Portfolio face portion */
+#portfolioFaceDiv {
+  text-align: center;
+}
+
+#headshotDiv {
+  margin-left: auto;
+  @media (max-width: 768px) {
+    margin-right: auto;
+  }
+}
+
+.headshot-img-div {
+  display: flex;
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
+}
+
+.headshot-img-div .gradient-border {
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+#headshotImg {
+  max-width: 200px;
+  border-radius: 100%;
+}
+
+
+.portfolio-content {
+    text-align: left;
+}
+
+.portfolio-content h2 {
+    color: var(--color-foreground-primary);
+}
+
+.portfolio-content h5 {
+    color: var(--color-foreground-secondary);
+  font-weight: 300;
+}
+
+.portfolio-content p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}

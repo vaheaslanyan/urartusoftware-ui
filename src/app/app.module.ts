@@ -16,6 +16,10 @@ import { ConfirmationPageComponent } from './components/confirmation-page/confir
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { TextCloudComponent } from './components/text-cloud/text-cloud.component';
 import { TerminalComponent } from './components/terminal/terminal.component';
+import { BioComponent } from './components/portfolio/bio/bio.component';
+import { TechStackComponent } from './components/portfolio/tech-stack/tech-stack.component';
+import { PortfolioFaceComponent } from './components/portfolio/portfolio-face/portfolio-face.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { TerminalComponent } from './components/terminal/terminal.component';
     ConfirmationPageComponent,
     PortfolioComponent,
     TextCloudComponent,
-    TerminalComponent
+    TerminalComponent,
+    BioComponent,
+    TechStackComponent,
+    PortfolioFaceComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
