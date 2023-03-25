@@ -21,6 +21,7 @@ import { TechStackComponent } from './components/portfolio/tech-stack/tech-stack
 import { PortfolioFaceComponent } from './components/portfolio/portfolio-face/portfolio-face.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioShowroomComponent } from './components/portfolio/portfolio-showroom/portfolio-showroom.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PortfolioShowroomComponent } from './components/portfolio/portfolio-sho
     TechStackComponent,
     PortfolioFaceComponent,
     FooterComponent,
-    PortfolioShowroomComponent
+    PortfolioShowroomComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,

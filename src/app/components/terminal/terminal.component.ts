@@ -37,9 +37,9 @@ export class TerminalComponent implements OnInit {
       this.typedText = 'cd ..';
       this.charCount = this.typedText.length;
       this.isResettingAnimation = false;
+      this.isInNavMenu = true;
       setTimeout(() => {
         this.path = '';
-        this.isInNavMenu = true;
         this.typedText = '';
         this.charCount = 0;
         this.handleComponentChange(0);

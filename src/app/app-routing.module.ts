@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { ConfirmationPageComponent } from './components/confirmation-page/confirmation-page.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LandingComponent } from './components/landing/landing.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: PortfolioComponent
+  },
+  {
+    path: 'vahe',
+    component: ComingSoonComponent
   },
   /* MAKE SURE THIS IS ALWAYS LAST*/
   {
