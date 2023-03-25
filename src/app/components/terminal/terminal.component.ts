@@ -55,8 +55,8 @@ export class TerminalComponent implements OnInit {
 
   navToOption(option: string) {
     setTimeout(() => {
-      this.charCount = option.length;
-      this.typedText = option;
+      this.typedText = 'cd ' + option;
+      this.charCount = this.typedText.length;
       this.isResettingAnimation = false;
       setTimeout(() => {
         this.path = '/' + option;
