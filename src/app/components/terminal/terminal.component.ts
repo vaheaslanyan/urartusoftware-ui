@@ -11,6 +11,7 @@ export class TerminalComponent implements OnInit {
   charCount = 0;
   isResettingAnimation = false;
   isInNavMenu = true;
+  isLs = true;
 
   constructor(private renderer: Renderer2, private el: ElementRef) {}
 
@@ -19,7 +20,7 @@ export class TerminalComponent implements OnInit {
   navBack() {
     this.resetPath();
     setTimeout(() => {
-      this.typedText = 'cd .. && ls';
+      this.typedText = 'cd ..';
       this.charCount = this.typedText.length;
       this.isResettingAnimation = false;
       setTimeout(() => {
@@ -27,6 +28,16 @@ export class TerminalComponent implements OnInit {
         this.isInNavMenu = true;
         this.typedText = '';
         this.charCount = 0;
+        setTimeout(() => {
+          this.typedText = 'ls';
+          this.charCount = this.typedText.length;
+          this.isResettingAnimation = false;
+          setTimeout(() => {
+            this.isLs = true;
+            this.typedText = '';
+            this.charCount = 0;
+          }, 2000);
+        }, 1);
       }, 2000);
     }, 1);
   }
@@ -50,6 +61,7 @@ export class TerminalComponent implements OnInit {
       setTimeout(() => {
         this.path = option;
         this.isInNavMenu = false;
+        this.isLs = false;
         this.typedText = '';
         this.charCount = 0;
       }, 2000);
