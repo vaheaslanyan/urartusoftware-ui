@@ -20,6 +20,7 @@ import { BioComponent } from './components/portfolio/bio/bio.component';
 import { TechStackComponent } from './components/portfolio/tech-stack/tech-stack.component';
 import { PortfolioFaceComponent } from './components/portfolio/portfolio-face/portfolio-face.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PortfolioShowroomComponent } from './components/portfolio/portfolio-showroom/portfolio-showroom.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BioComponent,
     TechStackComponent,
     PortfolioFaceComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioShowroomComponent
   ],
   imports: [
     BrowserModule,
