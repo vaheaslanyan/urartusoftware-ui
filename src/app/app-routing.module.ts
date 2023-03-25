@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'vahe',
-    component: ComingSoonComponent
+    component: PortfolioComponent
   },
   /* MAKE SURE THIS IS ALWAYS LAST*/
   {
