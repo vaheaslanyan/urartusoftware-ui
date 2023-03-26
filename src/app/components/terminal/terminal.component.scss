@@ -11,6 +11,10 @@
 #backButtonButton:disabled {
 }
 
+#backButtonButton:focus, #backButtonButton:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .terminal-top-div {
   display: flex;
   width: 100%;

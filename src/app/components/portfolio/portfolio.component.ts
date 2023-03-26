@@ -16,6 +16,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit{
   selectedViewOption = 0;
+  terminalNavigationNeverPressed = true;
 
   constructor(){}
 
@@ -25,5 +26,6 @@ export class PortfolioComponent implements OnInit{
 
   changeViewOption(newViewOption: number) {
     this.selectedViewOption = newViewOption;
+    this.terminalNavigationNeverPressed = false;
   }
 }

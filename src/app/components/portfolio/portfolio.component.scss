@@ -1,16 +1,67 @@
 #portfolioMainDiv {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 10rem;
   max-width: 600px;
   justify-content: space-between;
 }
 
+// Promt Section
+.prompt-div {
+  min-height: 40px;
+  line-height: 1.3ch;
+  font-size: 24px;
+}
+
+.prompt-text-div span {
+  opacity: 0;
+}
+
+.prompt-text-div span:nth-child(1) {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.prompt-text-div span:nth-child(2) {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.fade-out {
+  animation: fadeOutAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// Terminal Section
 .terminal-insert-div {
   margin: 0;
   width: 100%;
   margin-bottom: 4rem;
 }
 
+// View Options Section
 #viewOptionDiv {
   margin-top: 4rem;
 }
