@@ -7,6 +7,17 @@
     color: var(--color-foreground-secondary);
 }
 
+#contactImageDiv {
+    position: absolute;
+    z-index: -100;
+    top: 10rem;
+    right: 1rem;
+}
+
+#contactImageDiv img {
+    height: 200px;
+}
+
 #contactTitleDiv {
     max-width: 600px;
     margin: 5rem auto 0 auto;
