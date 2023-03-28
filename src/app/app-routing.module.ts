@@ -28,10 +28,10 @@ const routes: Routes = [
     path: 'vahe',
     component: PortfolioComponent
   },
-  {
-    path: 'admin',
-    component: AddProjectComponent
-  },
+  // {
+  //   path: 'admin',
+  //   component: AddProjectComponent
+  // },
   /* MAKE SURE THIS IS ALWAYS LAST*/
   {
     path: '**',

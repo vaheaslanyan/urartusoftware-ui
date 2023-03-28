@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-project.component.scss']
 })
 export class AddProjectComponent {
-
+    isLoading = false;
 }
