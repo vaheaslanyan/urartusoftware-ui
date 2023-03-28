@@ -53,6 +53,7 @@ export class ContactFormComponent implements OnInit {
         this.alertService.setAlert("Request failed", AlertLevelEnum.DANGER);
       }
     }).add(() => {
+      // Runs in either case after above is done
       this.isLoading = false;
     });
   }

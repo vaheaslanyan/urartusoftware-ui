@@ -112,6 +112,10 @@ form .dropdown {
     visibility: hidden;
 }
 
+.is-absent {
+    display: none;
+}
+
 // Field with failed validation
 form .ng-touched.ng-invalid {
     border-color: var(--color-foreground-tertiary);

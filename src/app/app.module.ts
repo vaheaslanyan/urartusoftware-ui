@@ -22,6 +22,8 @@ import { PortfolioFaceComponent } from './components/portfolio/portfolio-face/po
 import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioShowroomComponent } from './components/portfolio/portfolio-showroom/portfolio-showroom.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
+import { AddProjectComponent } from './components/admin/add-project/add-project.component';
+import { SpinnerComponent } from './components/shared/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ComingSoonComponent } from './components/coming-soon/coming-soon.compon
     PortfolioFaceComponent,
     FooterComponent,
     PortfolioShowroomComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    AddProjectComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
