@@ -20,9 +20,7 @@ export class PortfolioComponent implements OnInit{
 
   constructor(){}
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnInit(): void {}
 
   changeViewOption(newViewOption: number) {
     this.selectedViewOption = newViewOption;
