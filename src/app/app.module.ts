@@ -25,6 +25,8 @@ import { ComingSoonComponent } from './components/coming-soon/coming-soon.compon
 import { AddProjectComponent } from './components/admin/add-project/add-project.component';
 import { SpinnerComponent } from './components/shared/spinner/spinner.component';
 import { AddProjectFormComponent } from './components/admin/add-project/add-project-form/add-project-form.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 @NgModule({
   declarations: [
