@@ -1,7 +1,127 @@
 [
+    
     {
-        "imageUrl": "",
-        "titleText": "this worked",
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297300/project-screenshots/Screenshot_2023-03-28_at_7.17.39_PM_ida7zl.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/FDS",
+        "titleText": "Food Delivery System",
+        "subText": "Offload aspects of your business, ensuring smooth operations so you can concentrate on your customers"
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297299/project-screenshots/Screenshot_2023-03-28_at_7.17.48_PM_ubdmfc.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/FDS",
+        "titleText": "Food Delivery System",
+        "subText": "Offload aspects of your business, ensuring smooth operations so you can concentrate on your customers"
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297300/project-screenshots/Screenshot_2023-03-28_at_7.17.59_PM_rifjuf.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/FDS",
+        "titleText": "Food Delivery System",
+        "subText": "Offload aspects of your business, ensuring smooth operations so you can concentrate on your customers"
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297300/project-screenshots/Screenshot_2023-03-28_at_7.18.08_PM_m8ptju.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/FDS",
+        "titleText": "Food Delivery System",
+        "subText": "Offload aspects of your business, ensuring smooth operations so you can concentrate on your customers"
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297299/project-screenshots/Screenshot_2023-03-28_at_7.17.19_PM_btojl5.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/FDS",
+        "titleText": "Food Delivery System",
+        "subText": "Offload aspects of your business, ensuring smooth operations so you can concentrate on your customers"
+    },
+
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297332/project-screenshots/Screenshot_2022-12-12_at_2.45.22_PM_z3rkp3.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/ERS",
+        "titleText": "Employee Reimbursement System",
+        "subText": "Leave paperwork to computers. There is no need to manually keep track of data... it's 21st century after all."
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297337/project-screenshots/Screenshot_2022-12-12_at_2.46.02_PM_octn02.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/ERS",
+        "titleText": "Employee Reimbursement System",
+        "subText": "Leave paperwork to computers. There is no need to manually keep track of data... it's 21st century after all."
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297314/project-screenshots/Screenshot_2022-12-12_at_2.42.02_PM_zjkwgh.png",
+        "projectUrl": "",
+        "githubUrl": "https://github.com/vaheaslanyan/ERS",
+        "titleText": "Employee Reimbursement System",
+        "subText": "Leave paperwork to computers. There is no need to manually keep track of data... it's 21st century after all."
+    },
+
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680466521/project-screenshots/Screenshot_2023-04-02_at_3.13.08_PM_qbezyg.png",
+        "projectUrl": "https://levonart.urartusoftware.com",
+        "githubUrl": "https://github.com/vaheaslanyan/levonart",
+        "titleText": "Artist Gallery",
+        "subText": "Showcase your work to the world. And when it comes to it, your art pieces are a click away for collectors."
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680466521/project-screenshots/Screenshot_2023-04-02_at_3.14.24_PM_hfxnrf.png",
+        "projectUrl": "https://levonart.urartusoftware.com",
+        "githubUrl": "https://github.com/vaheaslanyan/levonart",
+        "titleText": "Artist Gallery",
+        "subText": "Showcase your work to the world. And when it comes to it, your art pieces are a click away for collectors."
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680466521/project-screenshots/Screenshot_2023-04-02_at_3.15.00_PM_vbecyy.png",
+        "projectUrl": "https://levonart.urartusoftware.com",
+        "githubUrl": "https://github.com/vaheaslanyan/levonart",
+        "titleText": "Artist Gallery",
+        "subText": "Showcase your work to the world. And when it comes to it, your art pieces are a click away for collectors."
+    },
+
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680475749/project-screenshots/Screenshot_2023-04-02_at_5.48.59_PM_cv5rwj.png",
+        "projectUrl": "https://travlr.urartusoftware.com",
+        "githubUrl": "https://github.com/vaheaslanyan/travelmap",
+        "titleText": "Interactive Web Apps",
         "subText": ""
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680466299/project-screenshots/travlr_ylov0m.png",
+        "projectUrl": "https://travlr.urartusoftware.com",
+        "githubUrl": "https://github.com/vaheaslanyan/travelmap",
+        "titleText": "Interactive Web Apps",
+        "subText": ""
+    },
+
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297355/project-screenshots/IMG_0846_onbnja.png",
+        "projectUrl": "",
+        "githubUrl": "",
+        "titleText": "Mobile Apps",
+        "subText": "Users deserve the smooth experience of native apps, whatever problem your next app is solving for them."
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297370/project-screenshots/IMG_0848_kjurlx.png",
+        "projectUrl": "",
+        "githubUrl": "",
+        "titleText": "Mobile Apps",
+        "subText": "Users deserve the smooth experience of native apps, whatever problem your next app is solving for them."
+    },
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297360/project-screenshots/IMG_0847_fuuf9o.png",
+        "projectUrl": "",
+        "githubUrl": "",
+        "titleText": "Mobile Apps",
+        "subText": "Users deserve the smooth experience of native apps, whatever problem your next app is solving for them."
+    },
+
+    {
+        "imageUrl": "https://res.cloudinary.com/dolmkfdxb/image/upload/v1680297302/project-screenshots/Screenshot_2022-12-13_at_3.56.07_PM_wwwmxy.png",
+        "projectUrl": "",
+        "githubUrl": "",
+        "titleText": "Database Architecture Design",
+        "subText": "You don't need to wory what happens behind the scenes. We got you covered on every level."
     }
 ]
