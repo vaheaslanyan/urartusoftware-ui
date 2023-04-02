@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class PortfolioComponent implements OnInit{
-  selectedViewOption = 0;
+  selectedViewOption = 3;
   terminalNavigationNeverPressed = true;
 
   constructor(){}

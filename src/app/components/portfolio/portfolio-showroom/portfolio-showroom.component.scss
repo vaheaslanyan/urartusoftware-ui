@@ -1,0 +1,47 @@
+#portfolioCarousel {
+    background-color: var(--color-background-dark);
+    border-radius: 5px;
+    
+    // For trickling down border radius
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 500px;
+    display: flex;
+}
+
+.carousel-item-img-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-inner img {
+    margin: auto;
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.carousel-caption-backgrop {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+
+    overflow: hidden;
+
+    background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    font-size: 30px;
+    
+    // Sets color based on background
+    mix-blend-mode: difference;
+}
