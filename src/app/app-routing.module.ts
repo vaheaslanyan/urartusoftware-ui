@@ -26,7 +26,8 @@ const routes: Routes = [
   },
   {
     path: 'vahe',
-    component: PortfolioComponent
+    redirectTo: 'about',
+    pathMatch: 'full'
   },
   // {
   //   path: 'admin',

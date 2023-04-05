@@ -26,6 +26,10 @@
     margin: 5rem auto 0 auto;
 }
 
+#contactTitleDiv p {
+    color: var(--color-text-primary);
+}
+
 #contactFormDiv {
     max-width: 600px;
     margin: auto;
