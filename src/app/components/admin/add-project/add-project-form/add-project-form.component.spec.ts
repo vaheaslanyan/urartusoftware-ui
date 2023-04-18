@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddProjectFormComponent } from './add-project-form.component';
+import { SpinnerComponent } from 'src/app/components/shared/spinner/spinner.component';
+import { CustomButtonComponent } from 'src/app/components/shared/custom-button/custom-button.component';
 
 describe('AddProjectFormComponent', () => {
   let component: AddProjectFormComponent;
@@ -8,7 +10,7 @@ describe('AddProjectFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AddProjectFormComponent ]
+      declarations: [ AddProjectFormComponent, SpinnerComponent, CustomButtonComponent ]
     })
     .compileComponents();
 

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PortfolioShowroomComponent } from './portfolio-showroom.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('PortfolioShowroomComponent', () => {
   let component: PortfolioShowroomComponent;
@@ -8,7 +9,9 @@ describe('PortfolioShowroomComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PortfolioShowroomComponent ]
+      declarations: [ PortfolioShowroomComponent ],
+      imports: [ HttpClientModule ]
+
     })
     .compileComponents();
 

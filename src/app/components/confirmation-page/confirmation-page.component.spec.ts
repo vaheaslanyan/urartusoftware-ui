@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ConfirmationPageComponent } from './confirmation-page.component';
+import { CustomButtonComponent } from '../shared/custom-button/custom-button.component';
 
 describe('ConfirmationPageComponent', () => {
   let component: ConfirmationPageComponent;
@@ -8,7 +9,7 @@ describe('ConfirmationPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ConfirmationPageComponent ]
+      declarations: [ ConfirmationPageComponent, CustomButtonComponent ]
     })
     .compileComponents();
 
