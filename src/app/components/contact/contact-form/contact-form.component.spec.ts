@@ -4,8 +4,9 @@ import { ContactFormComponent } from './contact-form.component';
 import { ContactRequestService } from 'src/app/services/contact-request.service';
 
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { SpinnerComponent } from '../../shared/spinner/spinner.component';
+import { CustomButtonComponent } from '../../shared/custom-button/custom-button.component';
 
 describe('ContactFormComponent', () => {
   let component: ContactFormComponent;
@@ -14,9 +15,9 @@ describe('ContactFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      declarations: [ContactFormComponent, SpinnerComponent, CustomButtonComponent],
+      imports: [HttpClientTestingModule, FormsModule],
       providers: [ContactRequestService],
-      declarations: [ContactFormComponent, SpinnerComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ContactFormComponent);

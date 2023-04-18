@@ -54,7 +54,8 @@ import { AddProjectFormComponent } from './components/admin/add-project/add-proj
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
