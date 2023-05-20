@@ -89,6 +89,9 @@
 .ttext-type-div {
   margin-left: 10px;
   height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .ttext-type p {
@@ -101,6 +104,11 @@
   animation: type 1.5s steps(var(--char-count), end);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+.terminal-cursor {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 // Type animation
